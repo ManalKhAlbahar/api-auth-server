@@ -16,7 +16,7 @@ Work Team (Obieda Akilan , Manal Albahar)
 }  
 then send.
 
--/signin post request ,Authorization ,Basic Auth, 
+- /signin post request ,Authorization ,Basic Auth, 
 
 {
 email :email.com
@@ -24,7 +24,7 @@ password : 123
 }  
 then send.
 
--/users gett request ,Authorization ,Bearer Auth, 
+- /users gett request ,Authorization ,Bearer Auth, 
 
 token ........
 then send.
