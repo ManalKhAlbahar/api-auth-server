@@ -10,6 +10,6 @@ db.sync().then(()=>{
     server.start(process.env.PORT || 3008);   
    })
 
-  // process.env.PORT || 
+
 
 
