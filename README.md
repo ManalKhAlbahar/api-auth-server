@@ -29,6 +29,12 @@ then send.
       token ........
 then send.
 to get all users ,only Admain can read all users.
+# Heroku Link  
+https://manal-api-auth-server.herokuapp.com/users   (admin)  
+https://manal-api-auth-server.herokuapp.com/signup  
+https://manal-api-auth-server.herokuapp.com/signin  
+https://manal-api-auth-server.herokuapp.com/users/:id  (delete)
+
 
 
  
