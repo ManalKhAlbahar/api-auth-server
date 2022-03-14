@@ -10,23 +10,23 @@ Work Team (Obieda Akilan , Manal Albahar)
 - get '/' (Home Route)
 - /signup post request ,body, raw ,json 
 
-{
-"email": "email.com",
-"password": "123"  
-}  
+      {
+      "email": "email.com",
+      "password": "123"  
+      }  
 then send.
 
 - /signin post request ,Authorization ,Basic Auth, 
 
-            - {
-email :email.com
-password : 123  
-}  
+       {
+      email :email.com
+      password : 123  
+      }  
 then send.
 
 - /users gett request ,Authorization ,Bearer Auth, 
 
-token ........
+      token ........
 then send.
 to get all users ,only Admain can read all users.
 
