@@ -11,7 +11,7 @@ Work Team (Obieda Akilan , Manal Albahar)
 - /signup post request ,body, raw ,json 
 
 {
-"email": "test@gmail.com",
+"email": "email.com",
 "password": "123"  
 }  
 then send.
@@ -19,7 +19,16 @@ then send.
 -/signin post request ,Authorization ,Basic Auth, 
 
 {
-email :test@gmail.com
+email :email.com
 password : 123  
 }  
 then send.
+
+-/users gett request ,Authorization ,Bearer Auth, 
+
+token ........
+then send.
+to get all users ,only Admain can read all users.
+
+
+ 
