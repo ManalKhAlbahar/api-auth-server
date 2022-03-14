@@ -18,7 +18,7 @@ then send.
 
 - /signin post request ,Authorization ,Basic Auth, 
 
-{
+            - {
 email :email.com
 password : 123  
 }  
