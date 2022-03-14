@@ -33,7 +33,8 @@ to get all users ,only Admain can read all users.
 https://manal-api-auth-server.herokuapp.com/users   (admin)  
 https://manal-api-auth-server.herokuapp.com/signup  
 https://manal-api-auth-server.herokuapp.com/signin  
-https://manal-api-auth-server.herokuapp.com/users/:id  (delete)
+https://manal-api-auth-server.herokuapp.com/users/:id  (delete)  
+https://manal-api-auth-server.herokuapp.com/api/v2/foods  (post and get)
 
 
 
