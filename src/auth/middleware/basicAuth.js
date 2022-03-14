@@ -1,8 +1,8 @@
 'use strict';
 const base64 = require('base-64');
 const bcrypt = require('bcrypt');
-const { User } = require('../models/database')
-const JWT = require('jsonwebtoken')
+const { User } = require('../models/database');
+const JWT = require('jsonwebtoken');
 const SECRET = process.env.SECRET || "Manal Secret";
 
 const basicAuth = async (req, res, next) => {
@@ -15,16 +15,17 @@ const basicAuth = async (req, res, next) => {
             let [email, password] = decoded.split(':');
 
             const user = await User.findOne({ where: { email: email } });
-            console.log(user);
+            // console.log(user);
             var validPass = await bcrypt.compare(password, user.password);
-            console.log(validPass);
+            // console.log(validPass);
             if (validPass){
-                console.log(validPass);
-                //req.user = user
+                 console.log(validPass);
                 let newToken = JWT.sign({ email: user.email }, SECRET);
-                console.log(newToken);
+                // console.log(newToken);
                 user.token = newToken;
-                res.status(200).json(user);
+                console.log(user);
+                req.user =user;
+                // res.status(200).json(user);
                 next();
             } else {
                 res.status(403).send("invalid login Password");

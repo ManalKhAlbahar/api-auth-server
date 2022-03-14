@@ -7,10 +7,9 @@ const {db} =require('./src/auth/models/database');
 
 
 db.sync().then(()=>{
-    server.start(3008);   
+    server.start(process.env.PORT || 3008);   
    })
 
   // process.env.PORT || 
 
 
-   

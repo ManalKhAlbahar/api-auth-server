@@ -18,9 +18,7 @@ const User = (sequelize, DataTypes) => sequelize.define('users', {
     },
     token: {
         type: DataTypes.VIRTUAL,
-        get() {
-            return JWT.sign({ username: this.username }, SECRET);
-        }
+      
     },
     actions: {
         type: DataTypes.VIRTUAL,
